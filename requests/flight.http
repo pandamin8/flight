@@ -1,0 +1,31 @@
+### Add a new flight to the database (Admin)
+POST http://localhost:3000/flight
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkZDg5Y2Y2ZTAyMTM2ODA3NjgxODgiLCJpYXQiOjE2NzIzMzgxNDh9.4ngHlzjOSB9N83ViRrmybYPixkXzZNnGQo1Pa54uydA
+
+{
+    "origin": "tehran",
+    "destination": "kish",
+    "airline": "iran air",
+    "capacity": "10",
+    "flightDate": "2023-12-30T06:54:19.514Z"
+}
+
+### Find all flights or filter them by origin and destination
+GET http://localhost:3000/flight?destination=kish
+
+### Find a flight with its id
+GET http://localhost:3000/flight/63ae970222c086733434f642
+
+### Update a flight (Admin)
+PATCH http://localhost:3000/flight/63ae970222c086733434f642
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkZDg5Y2Y2ZTAyMTM2ODA3NjgxODgiLCJpYXQiOjE2NzIzMzgxNDh9.4ngHlzjOSB9N83ViRrmybYPixkXzZNnGQo1Pa54uydA
+
+{
+    "origin": "tehran"
+}
+
+### Delete a flight (Admin)
+DELETE http://localhost:3000/flight/63aed0f36c74c494e6b60c36
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkZDg5Y2Y2ZTAyMTM2ODA3NjgxODgiLCJpYXQiOjE2NzIzMzgxNDh9.4ngHlzjOSB9N83ViRrmybYPixkXzZNnGQo1Pa54uydA

@@ -1,0 +1,7 @@
+### Reserve a flight (User)
+POST http://localhost:3000/reserve/63aed0f36c74c494e6b60c36
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkY2JjZjM0ZjJhMTNiMDVkOGY3YWEiLCJpYXQiOjE2NzIzMzQyODd9.kjL0Rkhwh9e5G77C1Arep268tCla-fbjUKjGn4yW5Zk
+
+### Cancel a reservation (User)
+DELETE http://localhost:3000/reserve/cancel/63aed1526c74c494e6b60c3e
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkY2JjZjM0ZjJhMTNiMDVkOGY3YWEiLCJpYXQiOjE2NzIzMzQyODd9.kjL0Rkhwh9e5G77C1Arep268tCla-fbjUKjGn4yW5Zk

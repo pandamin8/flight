@@ -1,0 +1,35 @@
+### Sign up user
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "123456",
+    "name": "Amin"
+}
+
+### Login as user
+POST http://localhost:3000/auth/user
+Content-Type: application/json
+
+{
+    "email": "test@test.com",
+    "password": "123456"
+}
+
+### Login as admin
+POST http://localhost:3000/auth/admin
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin"
+}
+
+### Show authenticated users data (User)
+GET http://localhost:3000/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkY2JjZjM0ZjJhMTNiMDVkOGY3YWEiLCJpYXQiOjE2NzIzODExNTV9.KeSfGKRbhcyXA7c38b2YyIVSydpGhLB8IPjm5yDWjN8
+
+### Show authenticated users reservations (User)
+GET http://localhost:3000/me/reservations
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2M2FkY2JjZjM0ZjJhMTNiMDVkOGY3YWEiLCJpYXQiOjE2NzIzODExNTV9.KeSfGKRbhcyXA7c38b2YyIVSydpGhLB8IPjm5yDWjN8
